@@ -3,21 +3,21 @@
   <head>
     <title>Hello</title>
     <script>
-     document.addEventListener('DOMContentLoaded',function(){
-      document.querySelector('form').onsubmit = function(){
+     document.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('form').onsubmit = function () {
           const name = document.querySelector('#name').value;
-          alert(`Hello, ${name}!`);
-      };
-     });
-
+          alert(` hi ${name}`)
+        }
+     })
       
     </script>
   </head>
   <body>
-    <h1>Hello</h1>
+    <h1>Hi</h1>
     <form>
         <input autofocus id="name" placeholder="Name" type="text">
-        <input type="submit">
+        <inout type="submit"></inout>
     </form>
+   
   </body>
 </html>

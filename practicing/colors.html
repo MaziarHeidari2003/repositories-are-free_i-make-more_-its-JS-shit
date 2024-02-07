@@ -3,23 +3,21 @@
   <head>
     <title>colors</title>
     <script> 
-      document.addEventListener('DOMContentLoaded', function(){
-
-        document.querySelector('select').onchange = function() {
-          document.querySelector('#hello').style.color = this.value;
-        }
-      
-      })
+     document.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('select').onchange(function(){
+          document.querySelector('#hello').style.color = this.value
+        })
+     })
       
     </script>
   </head>
   <body>
     <h1 id="hello">Hello</h1>
     <select>
-      <option data-color="red">Red</option>
-      <option data-color="blue" >Blue</option>
-      <option data-color="green">Green</option>
-    </select>  
-    
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+    </select>
+
   </body>
 </html>
